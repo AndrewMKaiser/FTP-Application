@@ -25,8 +25,8 @@ make
 To start the server, use the following commands:
 
 ```bash
-cd ftps
-./ftps <port_number>
+cd server
+./server <port_number>
 ```
 
 To stop the server, type `CTRL + C` into the terminal to cause a keyboard interrupt.
@@ -34,8 +34,8 @@ To stop the server, type `CTRL + C` into the terminal to cause a keyboard interr
 To start the client, first open another terminal, navigate to the main directory, and use the following commands:
 
 ```bash
-cd ftpc
-./ftpc <ip_address> <port_number>
+cd client
+./client <ip_address> <port_number>
 ```
 
 After running the client, you will be prompted to enter a filename. Press `ENTER` after typing your filename, and the file will be sent from the client to the server. Ensure that the file you wish to transfer is in the **same directory** as your client. You can transfer files up to 2<sup>32</sup> bytes, or 4 gigabytes, in length.

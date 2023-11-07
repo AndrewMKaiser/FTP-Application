@@ -1,17 +1,17 @@
 # Directories for the client and server
-CLIENT_DIR = ftpc
-SERVER_DIR = ftps
+CLIENT_DIR = client
+SERVER_DIR = server
 
 # Targets
 all: ftpc ftps
 
 ftpc:
 	mkdir -p $(CLIENT_DIR)
-	gcc -g -o $(CLIENT_DIR)/ftpc ftpc.c
+	gcc -g -o $(CLIENT_DIR)/client ftpc.c
 
 ftps:
 	mkdir -p $(SERVER_DIR)
-	gcc -g -o $(SERVER_DIR)/ftps ftps.c
+	gcc -g -o $(SERVER_DIR)/server ftps.c
 
 clean:
 	rm -rf $(CLIENT_DIR)
